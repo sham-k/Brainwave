@@ -1,5 +1,4 @@
 import SectionSvg from "../assets/svg/SectionSvg";
-import PropTypes from 'prop-types';
 
 const Section = ({
   className,
@@ -32,20 +31,11 @@ const Section = ({
               crossesOffset && crossesOffset
             } pointer-events-none lg:block xl:left-10 right-10`}
           />
-          <SectionSvg crossesOffset={crossesOffset}/>
+          <SectionSvg crossesOffset={crossesOffset} />
         </>
       )}
     </div>
   );
 };
-Section.propTypes = {
-  className: PropTypes.string,
-  id: PropTypes.string,
-  crosses: PropTypes.bool,
-  crossesOffset: PropTypes.string,
-  customPaddings: PropTypes.string,
-  children: PropTypes.node,
-};
-
 
 export default Section;
